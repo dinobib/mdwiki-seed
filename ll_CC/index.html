@@ -239,6 +239,7 @@
 		blockquote: /^( *>[^\n]+(\n[^\n]+)*\n*)+/,
 		list: /^( *)(bull) [\s\S]+?(?:hr|\n{2,}(?! )(?!\1bull )\n*|\s*$)/,
 		html: /^ *(?:comment|closed|closing) *(?:\n{2,}|\s*$)/,
+		def: /^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +["(]([^\n]+)[")])? *(?:\n+|$)/,
 		table: f,
 		paragraph: /^((?:[^\n]+\n?(?!hr|heading|lheading|blockquote|tag|def))+)\n*/,
 		text: /^[^\n]+/
@@ -351,7 +352,10 @@
 		del: f,
 		text: /^[\s\S]+?(?=[\\<!\[_*`]| {2,}\n|$)/
 	};
-	 j.gfm = g({}, j.normal, {
+	j._inside = /(?:\[[^\]]*\]|[^\]]|\](?=[^\[]*\]))*/, j._href = /\s*<?(.*?)>?(?:\s+['"]([\s\S]*?)['"])?\s*/, j.link = e(j.link)("inside", j._inside)("href", j._href)(), j.reflink = e(j.reflink)("inside", j._inside)(), j.normal = g({}, j), j.pedantic = g({}, j.normal, {
+		strong: /^__(?=\S)([\s\S]*?\S)__(?!_)|^\*\*(?=\S)([\s\S]*?\S)\*\*(?!\*)/,
+		em: /^_(?=\S)([\s\S]*?\S)_(?!_)|^\*(?=\S)([\s\S]*?\S)\*(?!\*)/
+	}), j.gfm = g({}, j.normal, {
 		escape: e(j.escape)("])", "~|])")(),
 		url: /^(https?:\/\/[^\s<]+[^<.,:;"')\]\s])/,
 		del: /^~~(?=\S)([\s\S]*?\S)~~/,
