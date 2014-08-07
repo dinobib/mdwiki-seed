@@ -355,8 +355,7 @@
 		del: f,
 		text: /^[\s\S]+?(?=[\\<!\[_*`]| {2,}\n|$)/
 	};
-	
-	j._href = /\s*<?(*?)>?(?:\s+['"]([\s\S]*?)['"])?\s*/, j.link = e(j.link)("inside", j._inside)("href", j._href)(), j.reflink = e(j.reflink)("inside", j._inside)(), j.normal = g({}, j), j.pedantic = g({}, j.normal, {
+	j.link = e(j.link)("inside", j._inside)("href", j._href)(), j.reflink = e(j.reflink)("inside", j._inside)(), j.normal = g({}, j), j.pedantic = g({}, j.normal, {
 		strong: /^__(?=\S)([\s\S]*?\S)__(?!_)|^\*\*(?=\S)([\s\S]*?\S)\*\*(?!\*)/,
 		em: /^_(?=\S)([\s\S]*?\S)_(?!_)|^\*(?=\S)([\s\S]*?\S)\*(?!\*)/
 	}), j.gfm = g({}, j.normal, {
