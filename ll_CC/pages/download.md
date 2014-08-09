@@ -4,7 +4,7 @@ title: Download
 
 # Download Page
 
-[Edit on Github]({{ site.github.repository_url }}/{{ page.path }})
+[Edit on Github]({{ site.github.repository_url }}/blob/gh-pages/{{ page.path }})
 
 ## Section 1
 
