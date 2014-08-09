@@ -1,4 +1,7 @@
-
+---
+title: Tags
+layout: default
+---
 
 hello
 =====
