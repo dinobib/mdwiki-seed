@@ -4,7 +4,7 @@ title: Download
 
 # Download Page
 
-[Edit on Github]({{ site.github.repository_url }})
+[Edit on Github]({{ site.github.repository_url }}{{ page.path }})
 
 ## Section 1
 
