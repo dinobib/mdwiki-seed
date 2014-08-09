@@ -1,0 +1,19 @@
+# Dependencies
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Dino
+tagline:          The Jekyll Butler
+url:              http://dinobib.github.io/
+paginate:         1
+baseurl:          /
+author:
+  name:           Alexandre Dumas de Rauly
+  url:            https://twitter.com/dinobib
+  email:          dinobib@gmail.com
+
+# Custom vars
+version:          1.0.0
