@@ -23,3 +23,11 @@ version:          2.1.0
 
 github:
   repo:           https://github.com/poole/hyde
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: ""
+    values:
+      baseurl: /mdwiki-seed/
