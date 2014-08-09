@@ -31,4 +31,4 @@ defaults:
       path: "" # empty string for all files
 	  type: "post"
     values:
-      layout: "default"
+      layout: "post"
