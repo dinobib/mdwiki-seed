@@ -2,8 +2,9 @@
 title: Download
 ---
 
-# Dowload Page
+# Download Page
 
+[Edit on Github]({{ site.github.repository_url }})
 
 ## Section 1
 
