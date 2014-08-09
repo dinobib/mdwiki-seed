@@ -1,16 +1,16 @@
 # Dependencies
-pygments:         true
+pygments: true
 
 # Permalinks
-permalink:        pretty
+permalink: pretty
 
 # Setup
-title:            Dino
-tagline:          The Jekyll Butler
-url:              http://dinobib.github.io/mdwiki-seed/
-baseurl:          http://dinobib.github.io/mdwiki-seed/
-paginate:         1
-baseurl:          /
+title: Dino
+tagline: The Jekyll Butler
+url: http://dinobib.github.io/mdwiki-seed/
+baseurl: /mdwiki-seed/
+paginate: 1
+
 author:
   name:           Alexandre Dumas de Rauly
   url:            https://twitter.com/dinobib
