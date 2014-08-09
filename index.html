@@ -1,10 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <script src="documentup.min.js"></script>
-    <script>
-      DocumentUp.document("dinobib/mdwikiseed");
-    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Mdwiki-seed by dinobib</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Mdwiki-seed</h1>
+        <p>Alternative to https://github.com/Dynalon/mdwiki-seed</p>
+
+        <p class="view"><a href="https://github.com/dinobib/mdwiki-seed">View the Project on GitHub <small>dinobib/mdwiki-seed</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/dinobib/mdwiki-seed/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/dinobib/mdwiki-seed/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/dinobib/mdwiki-seed">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="readme" class="anchor" href="#readme"><span class="octicon octicon-link"></span></a>README</h1>
+
+<h2>
+<a name="first-things-first" class="anchor" href="#first-things-first"><span class="octicon octicon-link"></span></a>First things first</h2>
+
+<p>Learn <a href="https://help.github.com/articles/github-flavored-markdown">Markdown</a>! Then check out MDwiki's <a href="http://dynalon.github.io/mdwiki/#!quickstart.md">quick start</a>.</p>
+
+<p>Whenever you feel stuck, go to <a href="http://mdwiki.info">MDwiki's own site</a> for further information.</p>
+
+<h2>
+<a name="one-wiki-only-fork-it" class="anchor" href="#one-wiki-only-fork-it"><span class="octicon octicon-link"></span></a>One Wiki Only? Fork It.</h2>
+
+<p>First off fork this repo and call it something like <code>&lt;MyProject&gt;-wiki</code>.</p>
+
+<h2>
+<a name="multiple-wikis-clone-it" class="anchor" href="#multiple-wikis-clone-it"><span class="octicon octicon-link"></span></a>Multiple Wikis? Clone It.</h2>
+
+<p>In case would you like to create one than one wiki for the same GitHub user or organization, then forking won't cut it. At the moment of this writing GitHub won't allow you to fork a single repository multiple times for the same account.</p>
+
+<p>There's a workaround to this, however on GitHub's web interface you won't see the sign that says "forked from" in your cloned repository.</p>
+
+<p>Below instructions how to clone this repository using the CLI:</p>
+
+<p><strong>First off, create a new (empty) repository on GitHub, then;</strong></p>
+
+<div class="highlight highlight-bash"><pre>git clone https://github.com/exalted/mdwiki-seed.git
+<span class="nb">cd </span>mdwiki-seed
+git remote add foobar &lt;HTTPS/SSH Clone URL of the New Repository&gt;
+git push foobar gh-pages
+</pre></div>
+
+<h2>
+<a name="create-a-new-wiki" class="anchor" href="#create-a-new-wiki"><span class="octicon octicon-link"></span></a>Create a New Wiki</h2>
+
+<p>It all begins by creating an initial file structure for any language that you would like to support. For example, if you're interested having a wiki in English, then you will duplicate <code>ll_CC</code> folder and rename your copy to <code>en</code>. (For a complete list of languages [<code>ll</code>] and country codes [<code>CC</code>] <a href="http://msdn.microsoft.com/en-us/library/ee825488">see here</a>.)</p>
+
+<p><code>ll_CC</code> is a starter template folder which you shouldn't ever edit directly, since you may loose your changes when MDwiki gets updated later.</p>
+
+<blockquote>
+<p>If you want to have your wiki in more than one language, then you duplicate <code>ll_CC</code> as many times as necessary and rename each copy with the appropriate language and country code. (Country code is optional and it is only useful if you want to distinguish, for instance, American English from British English, such as: <code>en_US</code> and <code>en_GB</code>.)</p>
+</blockquote>
+
+<h2>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting Started</h2>
+
+<p><em>You should have a language wiki folder by now, if not, go back and read above to create one.</em></p>
+
+<p>Suppose your first wiki is going to be in English, hence you must have a folder called <code>en</code>, as previously described.</p>
+
+<ol>
+<li>Open <code>index.html</code> file with your favorite plain text editor (the one that is at the same level where <code>ll_CC</code> and your language folder is located, <strong>NOT the one inside your language folder</strong>)</li>
+<li>Find where it says "Override <code>ll_CC</code> below with your default language and country code"</li>
+<li>Change refresh meta tag from <code>url=ll_CC/</code> to <code>url=en/</code> <strong>(trailing <code>/</code> is very important)</strong>
+</li>
+</ol><h2>
+<a name="structure" class="anchor" href="#structure"><span class="octicon octicon-link"></span></a>Structure</h2>
+
+<p><em>All file references here are relative to their respective language folder.</em></p>
+
+<table>
+<thead><tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td align="left"><code>index.md</code></td>
+<td align="left">File</td>
+<td align="left">Starting poing (a.k.a. "home page") for your wiki. <strong>Note this is not the <code>index.html</code>, but <code>index.md</code></strong>!</td>
+</tr>
+<tr>
+<td align="left"><code>navigation.md</code></td>
+<td align="left">File</td>
+<td align="left">Various settings of your wiki (e.g., name of your wiki, items in the navigation bar at the top, etc.)</td>
+</tr>
+<tr>
+<td align="left"><code>config.json</code></td>
+<td align="left">File</td>
+<td align="left">If you don't know what this is for, don’t touch it.</td>
+</tr>
+<tr>
+<td align="left"><code>pages</code></td>
+<td align="left">Folder</td>
+<td align="left">Ideally, inside this folder, you create one <code>*.md</code> file for every page inside your wiki (e.g., <code>foo.md</code>, <code>much-longer-names-are-also-okay.md</code>, etc.) You can also create as many subfolders as you need, just remember to link them accordingly.</td>
+</tr>
+<tr>
+<td align="left"><code>uploads</code></td>
+<td align="left">Folder</td>
+<td align="left">An example folder structure where you could put other files. <strong>Although it is best to host your files somewhere else, like Dropbox, or a CDN, etc.</strong>
+</td>
+</tr>
+</tbody>
+</table><h2>
+<a name="best-practices" class="anchor" href="#best-practices"><span class="octicon octicon-link"></span></a>Best Practices</h2>
+
+<h3>
+<a name="relative-urls" class="anchor" href="#relative-urls"><span class="octicon octicon-link"></span></a>Relative URLs</h3>
+
+<p>Instead of using absolute URLs when linking one wiki page to another, use relative URLs.</p>
+
+<p>For instance if <code>en/pages/foo.md</code> page had to link to <code>en/pages/bar.md</code>, it is enough to just add <code>[Click here](bar.md)</code> in your markdown.</p>
+
+<h3>
+<a name="dont-host-your-uploads-in-github" class="anchor" href="#dont-host-your-uploads-in-github"><span class="octicon octicon-link"></span></a>Don't Host Your Uploads in Git(Hub)</h3>
+
+<p>Instead of hosting your uploads inside the <code>uploads</code> folder, consider using Dropbox, Google Drive, or a CDN.</p>
+
+<h3>
+<a name="add-references-to-uploads" class="anchor" href="#add-references-to-uploads"><span class="octicon octicon-link"></span></a>Add References to Uploads</h3>
+
+<p><strong>Whenever you can, avoid hosting your uploads using Git(Hub).</strong></p>
+
+<p>If you <em>must</em> add references to files hosted inside the <code>uploads</code> folder here's how to do it, for instance: <code>![Image Title](uploads/images/foo.png)</code>. Add that in your markdown and you're good to go.</p>
+
+<h1>
+<a name="how-to-preview" class="anchor" href="#how-to-preview"><span class="octicon octicon-link"></span></a>How to Preview</h1>
+
+<p>In order to preview your changes locally, prior to publishing online, you may need to take some actions. Below some starting points for each operating system, also check out MDwiki's <a href="http://dynalon.github.io/mdwiki/#!faq.md">frequently asked questions</a> section for some ideas.</p>
+
+<h2>
+<a name="mac-os" class="anchor" href="#mac-os"><span class="octicon octicon-link"></span></a>Mac OS</h2>
+
+<p>The easiest way to serve up static sites on a Mac is to use <a href="http://anvilformac.com">Anvil</a>. Go ahead and download it from their website, install and add a site using the status bar icon: simply select the folder where your wiki is located on your Mac.</p>
+
+<h2>
+<a name="windows" class="anchor" href="#windows"><span class="octicon octicon-link"></span></a>Windows</h2>
+
+<blockquote>
+<p>This section needs some <img class="emoji" title=":heart:" alt=":heart:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2764.png" height="20" width="20" align="absmiddle">.</p>
+</blockquote>
+
+<h2>
+<a name="linux" class="anchor" href="#linux"><span class="octicon octicon-link"></span></a>Linux</h2>
+
+<p>You can use <a href="http://ysbaddaden.github.io/prax/">Prax</a>. Prax is a pure ruby alternative to Pow!! that runs on GNU/Linux.</p>
+
+<h1>
+<a name="for-developers" class="anchor" href="#for-developers"><span class="octicon octicon-link"></span></a>For Developers</h1>
+
+<p>You don't need to read below here or do anything at all if you're only interested creating your own wiki. This section is for developers or maintainers of this repository.</p>
+
+<h2>
+<a name="update-mdwiki" class="anchor" href="#update-mdwiki"><span class="octicon octicon-link"></span></a>Update MDwiki</h2>
+
+<blockquote>
+<p>Current version: <a href="http://git.io/HBH5Wg">0.6.2</a>.</p>
+</blockquote>
+
+<ol>
+<li>Go to <a href="https://github.com/Dynalon/mdwiki/releases/latest">https://github.com/Dynalon/mdwiki/releases/latest</a>
+</li>
+<li>Click on the green button on that page to download the latest release</li>
+<li>Extract the contents of the archive file</li>
+<li>Copy <code>mdwiki-slim.html</code> file from the extracted files onto <code>ll_CC/index.html</code> file in this repository by renaming, thus overriding <code>index.html</code>
+</li>
+<li>Update the version information above</li>
+<li>Commit and push your changes</li>
+</ol><p>You can now delete any files downloaded previously, if you want to.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/dinobib">dinobib</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
 </html>
