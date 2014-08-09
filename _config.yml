@@ -8,7 +8,7 @@ permalink: pretty
 title: Dino
 tagline: The Jekyll Butler
 url: http://dinobib.github.io/mdwiki-seed/
-baseurl: /mdwiki-seed
+baseurl: ""
 paginate: 1
 
 author:
