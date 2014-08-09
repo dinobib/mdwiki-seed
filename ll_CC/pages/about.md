@@ -1,3 +1,6 @@
+---
+title: about
+---
 
 
 # About Page
