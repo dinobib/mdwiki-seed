@@ -29,6 +29,5 @@ defaults:
   -
     scope:
       path: "" # empty string for all files
-	  type: "post"
     values:
       layout: "post"

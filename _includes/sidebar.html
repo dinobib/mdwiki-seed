@@ -26,6 +26,9 @@
         {% endif %}
       {% endfor %}
 <a class="sidebar-nav-item}" href="{{ site.baseurl }}/about">AAAbout</a>
+{% for post in site.posts %}
+  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ site.baseurl }}{{ post.url }})
+{% endfor %}
       <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
