@@ -11,7 +11,7 @@ title:            Hyde
 tagline:          'A Jekyll theme'
 description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:              http://hyde.getpoole.com
-baseurl:          mdwiki-seed
+baseurl:          /
 author:
   name:           'Alexandre Dumas de Rauly'
   url:            https://twitter.com/dinobib
@@ -24,10 +24,4 @@ version:          2.1.0
 github:
   repo:           https://github.com/poole/hyde
 
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: ""
-   values:
-   baseurl: /mdwiki-seed/
+
