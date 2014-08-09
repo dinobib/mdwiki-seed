@@ -28,7 +28,7 @@ github:
 defaults:
   -
     scope:
-      path: "" # an empty string here means all files in the project
-      type: post
-   values:
-   layout: post
+      path: "" # empty string for all files
+	  type: post
+    values:
+      layout: "default"
