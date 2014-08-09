@@ -1,0 +1,3 @@
+[submodule "mdwiki-seed.wiki"]
+	path = mdwiki-seed.wiki
+	url = https://dinobib@github.com/dinobib/mdwiki-seed.wiki.git
