@@ -11,3 +11,32 @@ title: What's Jekyll?
 It's an immensely useful tool and one we encourage you to use here with Hyde.
 
 Find out more by [visiting the project on GitHub](https://github.com/mojombo/jekyll).
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+| Name | Description          |
+| ------------- | ----------- |
+| Help      | ~~Display the~~ help window.|
+| Close     | _Closes_ a window     |  
+~~Mistaken text.~~
+
+Let's cite a fake book.[p. 42][#fake]
+
+[#fake]: John Doe. *A Totally Fake Book*. Vanity Press, 2006.
+
+Let's reference a glossary term.[^glossary]
+
+[^glossary]:**Apple    :**
+
+    Pomaceous fruit of plants of the genus Malus in 
+    the family Rosaceae.
+
+    Also the makers of really great products.
+
+Here is some text containing a footnote.[^somesamplefootnote]
+
+[^somesamplefootnote]: Here is the text of the footnote itself.
