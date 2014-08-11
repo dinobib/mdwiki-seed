@@ -1,7 +1,9 @@
 # Dependencies
 markdown:         kramdown
 kramdown:
-  use_coderay: true
+  enable_coderay: true
+  coderay_css: style
+  
 pygments:         true
 
 # Permalinks
