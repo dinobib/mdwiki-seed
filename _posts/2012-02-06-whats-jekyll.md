@@ -26,7 +26,7 @@ puts markdown.to_html
 
 
 
-Let's cite a fake book.[p. 42][#fake]
+Let's cite a fake book. [p. 42][#fake]
 
 [#fake]: John Doe. *A Totally Fake Book*. Vanity Press, 2006.
 
