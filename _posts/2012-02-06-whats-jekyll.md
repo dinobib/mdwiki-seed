@@ -21,12 +21,12 @@ puts markdown.to_html
 
 | Name | Description          |
 | ------------- | ----------- |
-| Help      | ~~Display the~~ help window.|
+| Help      | Display the help window.|
 | Close     | _Closes_ a window     | 
 
 
 
-Let's cite a fake book. [p. 42][#fake]
+Let's cite a fake book.[p. 42][#fake]
 
 [#fake]: John Doe. *A Totally Fake Book*. Vanity Press, 2006.
 
