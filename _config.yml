@@ -1,7 +1,6 @@
 # Dependencies
 markdown:         kramdown
 kramdown:
-  input: GFM
    use_coderay: true
   coderay:
     coderay_line_numbers: nil
