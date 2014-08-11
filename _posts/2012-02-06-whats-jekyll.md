@@ -22,7 +22,8 @@ puts markdown.to_html
 | Name | Description          |
 | ------------- | ----------- |
 | Help      | ~~Display the~~ help window.|
-| Close     | _Closes_ a window     |  
+| Close     | _Closes_ a window     | 
+
 ~~Mistaken text.~~
 
 Let's cite a fake book.[p. 42][#fake]
