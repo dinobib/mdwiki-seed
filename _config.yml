@@ -1,8 +1,8 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 kramdown:
   input: GFM
-  
+  use_coderay: true
 
 # Permalinks
 permalink:        date
