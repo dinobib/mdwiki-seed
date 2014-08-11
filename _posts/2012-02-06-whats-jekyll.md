@@ -16,7 +16,7 @@ Find out more by [visiting the project on GitHub](https://github.com/mojombo/jek
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
-~~~ ruby
+~~~
 
 
 | Name | Description          |
