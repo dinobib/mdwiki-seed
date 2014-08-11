@@ -1,11 +1,11 @@
 # Dependencies
 markdown:         kramdown
 kramdown:
+   input: GFM
    use_coderay: true
-     input: GFM
-  coderay:
-    coderay_line_numbers: nil
-    coderay_css: style
+   coderay:
+      coderay_line_numbers: nil
+      coderay_css: style
  
 
 # Permalinks
