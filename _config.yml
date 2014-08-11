@@ -1,6 +1,6 @@
 # Dependencies
 markdown: kramdown
-highlighter: coderay
+highlighter: pygments
 
 kramdown:
    input: GFM
