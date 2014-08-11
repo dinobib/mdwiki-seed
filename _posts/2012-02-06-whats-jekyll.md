@@ -39,6 +39,5 @@ Let's reference a glossary term.[^glossary]
 
     Also the makers of really great products.
 
-Here is some text containing a footnote.[^somesamplefootnote]
 
 [^somesamplefootnote]: Here is the text of the footnote itself.
