@@ -3,7 +3,6 @@ markdown:         redcarpet
 kramdown:
   input: GFM
   
-pygment: true
 
 # Permalinks
 permalink:        date
