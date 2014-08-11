@@ -1,8 +1,7 @@
 # Dependencies
 markdown:         kramdown
 kramdown:
-  enable_coderay: true
-  coderay_css: style
+  input: GFM
   
 pygments:         true
 
