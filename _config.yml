@@ -2,9 +2,7 @@
 markdown:         kramdown
 kramdown:
   input: GFM
-  coderay_css: style
-  
-pygments:         true
+  use_coderay: true
 
 # Permalinks
 permalink:        date
