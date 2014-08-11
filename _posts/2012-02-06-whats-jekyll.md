@@ -14,7 +14,7 @@ It's an immensely useful tool and one we encourage you to use here with Hyde.
 
 Find out more by [visiting the project on GitHub](https://github.com/mojombo/jekyll).
 
-```html
+```ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
